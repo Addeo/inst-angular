@@ -171,15 +171,14 @@ body {
 .content__group {
   opacity: 0;
   position: absolute;
-  top: 50vh;
+  top: 0;
   right: 0;
-  bottom: 40px;
-  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   z-index: 2;
   padding: 8vw;
+  width: 50%;
 
   //@media (max-width: 768px) {
   //  top: 40px;
