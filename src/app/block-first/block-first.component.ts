@@ -42,6 +42,30 @@ export class BlockFirstComponent implements OnInit {
     this.sectionOneScrollAnimations();
     this.sectionTwoScrollAnimations();
     this.initAnimations();
+
+    // const landingText = ["Sort Of", "evolve", "dominate"];
+    // const masterTl = gsap.timeline({ repeat: -1 });
+    // landingText.forEach((word) => {
+    //   const tl = gsap.timeline({
+    //     repeat: 1,
+    //     yoyo: true,
+    //     repeatDelay: 1,
+    //     ease: "power2.inOut"
+    //   });
+    //   tl.to(".landing-text", {
+    //     duration: 3,
+    //     scrambleText: {
+    //       text: word,
+    //       chars: "!<>-_\\/[]{}—=+*^?#",
+    //       //speed: 0.3,
+    //       newClass: "accent--text",
+    //       revealDelay: 0.5,
+    //       tweenLength: false
+    //     }
+    //   });
+    //   masterTl.add(tl);
+    // });
+
   }
 
   disableScroll(disabled: boolean): void {

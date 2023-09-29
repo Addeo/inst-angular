@@ -1,20 +1,15 @@
-body {
-  margin:0;
-  background:#15151e;
+.inst-block-five {
   overflow-x:hidden;
 }
-
-
-
 .races {
   width:fit-content;
   display:flex;
   flex-wrap:nowrap;
 }
 
-.races h2 {
-  font-family: 'Staatliches', cursive;
-  font-size:30vw;
+.races .cell {
+  width:50vw;
+  height: 50vh;
   flex-shrink:0;
   padding-right:0.3em;
   padding-left:0.3em;
@@ -23,7 +18,7 @@ body {
   margin:0;
 }
 
-.races h2:last-of-type {
+.races .cell:last-of-type {
   background:#e1e1ff;
 }
 

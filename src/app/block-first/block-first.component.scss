@@ -1,4 +1,4 @@
-.main {
+.block_first_main {
   display: grid;
   grid-template-columns:
     minmax(50px, 1fr) [layout-start] repeat(12, minmax(min-content, 130px))
@@ -6,14 +6,14 @@
   grid-template-rows: 50px 300px repeat(2, 100vh);
 }
 
-.header,
-.center-info,
-.section-one,
-.section-two {
+.block_first_header,
+.block_first_center-info,
+.block_first_section-one,
+.block_first_section-two {
   grid-column: layout-start / layout-end;
 }
 
-.header {
+.block_first_header {
   grid-row: 1 / 2;
   display: flex;
   align-items: center;
@@ -23,41 +23,9 @@
   top: 0;
   left: 50px;
   right: 50px;
-
-  .logo {
-    h4 {
-      font-size: 40px;
-    }
-  }
-
-  .nav {
-    .burger-icon {
-      width: 30px;
-      height: 2px;
-      background: #000;
-      position: relative;
-
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 100%;
-        background: #000;
-      }
-
-      &::before {
-        top: -6px;
-      }
-      &::after {
-        top: 6px;
-      }
-    }
-  }
 }
 
-.center-info {
+.block_first_center-info {
   grid-row: 2 / 3;
   align-self: center;
   &__box {
@@ -75,13 +43,13 @@
   }
 }
 
-.section-one {
+.block_first_section-one {
   grid-row: 3 / 4;
   display: grid;
   grid-template: repeat(2, 330px) / repeat(4, 1fr);
   grid-gap: 20px;
 }
-.section-two {
+.block_first_section-two {
   grid-row: 4 / -1;
   display: grid;
   grid-template-columns: 50% repeat(2, 25%);
@@ -92,7 +60,7 @@
     grid-column: 2 / -1;
   }
 
-  .letter {
+  .block_first_letter {
     position: relative;
     span:nth-child(1) {
       position: relative;
@@ -106,11 +74,11 @@
     }
   }
 
-  .titles {
-    .title-1 {
+  .block_first_titles {
+    .block_first_title-1 {
       display: flex;
       position: relative;
-      .num {
+      .block_first_num {
         position: absolute;
         top: 15px;
         left: -25px;
@@ -122,22 +90,22 @@
     }
   }
 
-  .paragraph {
+  .block_first_paragraph {
     font-family: "Helvetica";
     line-height: 1.4;
     margin-top: 15px;
     font-size: 18px;
   }
 
-  .image-1 {
+  .block_first_image-1 {
     grid-column: 2 / 3;
   }
-  .image-2 {
+  .block_first_image-2 {
     grid-column: 3 / -1;
   }
 }
 
-.image-container {
+.block_first_image-container {
   position: relative;
   img {
     filter: brightness(0.75);
@@ -146,18 +114,18 @@
     font-size: 70px;
   }
 }
-.image-container:nth-child(5) {
+.block_first_image-container:nth-child(5) {
   grid-row: 2 / 3;
   grid-column: 3 / 4;
 }
-.image-container:nth-child(4) {
+.block_first_image-container:nth-child(4) {
   & > :first-child {
     position: absolute;
     top: -26%;
   }
 }
 
-.image-container:nth-child(3) {
+.block_first_image-container:nth-child(3) {
   display: flex;
   justify-content: center;
   font-size: 70px;

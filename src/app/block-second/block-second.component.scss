@@ -10,8 +10,6 @@
 }
 
 .header {
-  border-right: 1px solid #f0f0f0;
-  border-left: 1px solid #f0f0f0;
   grid-column: center-start / center-end;
   grid-row: 1 / 2;
   display: grid;
@@ -20,8 +18,6 @@
 }
 
 .first-section {
-  border-right: 1px solid #f0f0f0;
-  border-left: 1px solid #f0f0f0;
   grid-column: center-start / center-end;
   grid-row: 2 / 3;
   display: grid;
@@ -30,8 +26,6 @@
 }
 .second-section {
   padding: 0 20px;
-  border-right: 1px solid #f0f0f0;
-  border-left: 1px solid #f0f0f0;
   grid-column: center-start / center-end;
   grid-row: 3 / 4;
   display: grid;

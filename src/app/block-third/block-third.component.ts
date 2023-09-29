@@ -22,7 +22,7 @@ export class BlockThirdComponent implements OnInit {
       ease: "none",
       scrollTrigger: {
         trigger: ".horizontal-sliders",
-        pin: ".main",
+        pin: ".block-third-main",
         pinSpacing: true,
         scrub: 1,
         end: "+=3000",
@@ -73,9 +73,9 @@ export class BlockThirdComponent implements OnInit {
     gsap.to(cardContent, {
       duration: active ? 1 : 0.2,
       ease: "expo.out",
-      stagger: 0.1,
+      // stagger: 0.1,
       alpha: active ? 1 : 0,
-      y: active ? 0 : 20,
+      // y: active ? 0 : 20,
       delay: active ? 0.4 : 0
     });
 

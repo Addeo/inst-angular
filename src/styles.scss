@@ -2,7 +2,24 @@
 
 :root {
   --color-light: #fefdfe;
+  --color-text: navy;
+  --color-bg: papayawhip;
+  --color-bg-accent: #ecdcc0;
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 60s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: papayawhip;
+    --color-bg: navy;
+    --color-bg-accent: #2626a0;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -30,4 +47,8 @@ body {
   width: 0;
   height: 0;
   visibility: hidden;
+}
+
+.section_title{
+  text-align: center;
 }

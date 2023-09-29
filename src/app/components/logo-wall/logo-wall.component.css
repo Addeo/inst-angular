@@ -1,39 +1,4 @@
-:root {
-  --color-text: navy;
-  --color-bg: papayawhip;
-  --color-bg-accent: #ecdcc0;
-  --size: clamp(10rem, 1rem + 40vmin, 30rem);
-  --gap: calc(var(--size) / 14);
-  --duration: 60s;
-  --scroll-start: 0;
-  --scroll-end: calc(-100% - var(--gap));
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text: papayawhip;
-    --color-bg: navy;
-    --color-bg-accent: #2626a0;
-  }
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  display: grid;
-  align-content: center;
-  overflow: hidden;
-  gap: var(--gap);
-  width: 100%;
-  min-height: 100vh;
-  font-family: system-ui, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: var(--color-text);
-  background-color: var(--color-bg);
-}
 
 .marquee {
   display: flex;
@@ -130,7 +95,8 @@ body {
 
 .wrapper--vertical {
   flex-direction: row;
-  height: 100vh;
+  /*height: 100vh;*/
+  padding: 100px 0px;
 }
 
 /* Toggle direction button */
