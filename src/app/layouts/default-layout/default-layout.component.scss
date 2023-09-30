@@ -1,0 +1,24 @@
+.default-layout{
+  --bg-size: 400%;
+  --color-one: #aadaff;
+  --color-two: #e8f2ff;
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)
+  )
+  0 0 / var(--bg-size) 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .default-layout {
+    animation: move-bg 32s linear infinite;
+  }
+  @keyframes move-bg {
+    to {
+      background-position: var(--bg-size) 0;
+    }
+  }
+}
+

@@ -2,6 +2,7 @@ import {Component, Inject, OnInit} from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { gsap } from 'gsap';
 import {Flip} from "gsap/Flip";
+import {cardTask, CardTask} from "./card";
 
 @Component({
   selector: 'inst-block-third',
@@ -10,9 +11,12 @@ import {Flip} from "gsap/Flip";
 })
 export class BlockThirdComponent implements OnInit {
 
+  cards:CardTask[] = []
   activeClass = "is-active";
 
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor(@Inject(DOCUMENT) private document: Document) {
+    this.cards = cardTask
+  }
 
   ngOnInit() {
     let sections = gsap.utils.toArray(".slide");

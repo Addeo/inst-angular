@@ -1,34 +1,3 @@
-.block-third-main{
-  overflow-x:hidden;
-}
-.horizontal-sliders{
-  display:flex;
-  flex-wrap: no-wrap;
-  width: 500%;
-  overflow-x:hidden;
-}
-
-.slide{
-  height:100vh;
-  width:100%;
-}
-
-.next-block{
-  height:100vh;
-}
-
-
-:root {
-  --background-color: #fff;
-  --selection-color: ;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -47,32 +16,54 @@ svg {
   text-shadow: none;
 }
 
-//.cards {
-//  margin: auto 0;
-//  width: 150px;
-//  max-width: 750px;
-//  display: flex;
-//  flex-wrap: wrap;
-//  justify-content: center;
-//
-//  @media (max-width: 768px) {
-//    width: 90%;
-//  }
-//}
+.block-third-main{
+  overflow-x:hidden;
+}
+.horizontal-sliders{
+  display:flex;
+  flex-wrap: no-wrap;
+  width: 500%;
+  overflow-x:hidden;
+}
+
+.slide{
+  height:90vh;
+  width:100%;
+}
+
+.next-block{
+  height:90vh;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  //padding-top: 100px;
+}
 
 .card,
-.card__inner,
 .card__image {
   width: 100%;
   height:  100%;
   display: flex;
-  flex-direction: row;
   //@media (max-width: 768px) {
   //  width: 200px;
   //  height: 200px;
   //}
 }
 
+.card__inner {
+  min-width: fit-content;
+  width: fit-content;
+  height: fit-content;
+}
+.card_open_title{
+  width: fit-content;
+  padding: 10px 5px;
+  background-color: white;
+  border-radius: 8px;
+}
 .card {
   cursor: pointer;
   flex: 0 0 auto;
@@ -80,9 +71,9 @@ svg {
 }
 
 .card__inner {
+  padding-top: 100px;
   will-change: transform;
   //box-shadow: 0 4px 10px rgba(black, 0.08);
-  background-color: white;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -108,11 +99,21 @@ svg {
   }
 }
 
+.card_button{
+
+}
+
 // ---------------------------------------------------------------
 // Card - Active
 // ---------------------------------------------------------------
 
 .card.is-active {
+  .card_open_title{
+    display: none;
+  }
+  .card_pre_information{
+    display: none;
+  }
   .card__inner {
     position: absolute;
     top: 0;
@@ -120,7 +121,7 @@ svg {
     bottom: 0;
     left: 0;
     //box-shadow: 0 6px 20px rgba(black, 0.05);
-    width: 50%;
+    width: 45%;
     height: 100%;
     z-index: 1;
     border-radius: 0;
@@ -155,7 +156,7 @@ svg {
   justify-content: center;
   z-index: 2;
   padding: 8vw;
-  width: 50%;
+  width: 45%;
 
   //@media (max-width: 768px) {
   //  top: 40px;
@@ -175,7 +176,7 @@ svg {
 
 .content__category {
   display: inline-block;
-  color: rgba(white, 0.8);
+  color: rgba(#b70000, 0.8);
   font-size: 14px;
   padding: 0 12px;
   line-height: 30px;
@@ -190,3 +191,17 @@ svg {
   margin-top: 55px;
   color: #888888;
 }
+
+
+//.cards {
+//  margin: auto 0;
+//  width: 150px;
+//  max-width: 750px;
+//  display: flex;
+//  flex-wrap: wrap;
+//  justify-content: center;
+//
+//  @media (max-width: 768px) {
+//    width: 90%;
+//  }
+//}
